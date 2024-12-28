@@ -1,0 +1,298 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    background-color: #efefef;
+    color: #131313f6;
+    line-height: 28px;
+}
+
+a {
+    color: #fff; /* Цвет текста */
+    text-decoration: none; /* Убирает подчеркивание */
+}
+
+.dm-sans-600 {
+    font-family: "DM Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.dm-sans-400 {
+    font-family: "DM Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.minecraft-list {
+    min-width: 503px;
+}
+
+.minecraft-title {
+    font-size: 52px;
+}
+
+.minecraft-wrapper {
+    position: absolute;
+}
+
+.minecraft-list {
+    list-style-type: none;
+    display: flex;
+    font-size: 22px;
+    align-items: end;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    padding: 0 0 0 47px;
+    text-transform: capitalize;
+    z-index: 2;
+    font-weight: 700;
+}
+
+.minecraft-list__element {
+    margin: 0 35px 0 0;
+    position: relative;
+}
+
+.minecraft-list__link {
+    display: inline-block;
+    color: #b0afaf;
+    transform-origin: bottom;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.minecraft-list__element:hover .minecraft-list__link {
+    color: #fff;
+    transform: scale(1.08);
+}
+
+.minecraft-list__element svg {
+    display: inline-block;
+    position: absolute;
+    pointer-events: none;
+    transform: scale(0.8) translateX(29px);
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s ease;
+}
+
+.minecraft-list__element:hover svg {
+    transform: rotate(90deg) scale(0.8) translate(-5px, -29px);
+}
+
+.dropdown-menu {
+    list-style-type: none;
+    display: none;
+    min-width: 200px;
+    background-color: #333;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    border-radius: 3px;
+    padding: 10px 0px;
+    z-index: 1;
+}
+
+.minecraft-list__element:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 5px 15px;
+}
+
+.dropdown-menu li a {
+    transition: background-color 0.3s ease;
+    color: #b0afaf;
+}
+
+.dropdown-menu li a:hover {
+    color: #fff;
+}
+
+.minecraft-top {
+    position: relative;
+    width: 100%;
+    height: calc(42vh - 33px);
+    padding-top: 33px;
+    background: url('mg12.jpg') no-repeat;
+    background-size: cover;
+}
+
+.minecraft-top__title-wrapper {
+    position: absolute;
+    bottom: 0;
+    top: 83px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.minecraft-top__title-cont {
+    color: #fff;
+    transform: translateY(-32px);
+}
+
+.minecraft-top__title {
+    line-height: 60px;
+    text-shadow: 4px 3px 8px #000;
+    text-align:center;
+}
+
+.minecraft-top__subtitle {
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 2px 1px 3px #000;
+    font-style: italic;
+}
+
+.paragraphs-container {
+    width: 100%;
+    max-width: 1000px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.paragraphs {
+    width: 95%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding-top: 0;
+}
+
+.title-paragraph {
+    padding: 40px 0 30px 0;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.paragraph {
+    padding-top: 28px;
+}
+
+.paragraph-1 {
+    padding-top: 0;
+}
+
+.paragraphs-inner {
+    width: 95%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.paragraphs-inner img {
+    width: 100%;
+    max-width: 700px;
+    padding-top: 28px;
+}
+
+.paragraph:last-child {
+    padding-bottom: 40px;
+}
+
+/* Адаптация для планшетов */
+@media (max-width: 768px) {
+    .minecraft-list {
+        align-items: flex-start;
+        padding-left: 32px;
+        font-size: 19px;
+    }
+
+    .minecraft-list__element {
+        margin-bottom: 10px;
+    }
+
+    .minecraft-top__title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .minecraft-top__title-cont {
+        transform: translateY(-23px);
+    }
+
+    .minecraft-top {
+        height: calc(28vh - 33px);
+    }
+
+    .paragraphs {
+        width: 90%;
+    }
+}
+
+@media (max-width: 580px) {
+    .minecraft-list {
+        align-items: flex-start;
+        padding-left: 14px;
+        font-size: 19px;
+    }
+
+    .minecraft-list__element {
+        margin-bottom: 10px;
+    }
+
+    .minecraft-top__title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .minecraft-top__title-cont {
+        transform: translateY(-23px);
+    }
+
+    .minecraft-top {
+        height: calc(28vh - 33px);
+    }
+
+    .paragraphs {
+        width: 90%;
+    }
+}
+
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 480px) {
+    html {
+        font-size:  17px;
+    }
+    
+    .minecraft-top__title {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .minecraft-list {
+        padding-left: 10px;
+    }
+
+
+    .minecraft-list__link {
+        font-size: 17px;
+    }
+
+    .minecraft-top {
+        height: calc(25vh - 33px);
+    }
+
+    .minecraft-top__title {
+        font-size: 32px;
+    }
+
+    .paragraphs {
+        width: 95%;
+    }
+
+    .dropdown-menu {
+        font-size: 14px;
+    }
+}

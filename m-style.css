@@ -265,8 +265,9 @@ a {
 
 /* Адаптация для мобильных устройств */
 @media (max-width: 480px) {
-    html {
-        font-size:  17px;
+    html, body {
+    font-size:  17px;
+    width: 100%;
     }
     
     .minecraft-top__title {

@@ -33,10 +33,6 @@ a {
     font-style: normal;
 }
 
-.minecraft-list {
-    min-width: 503px;
-}
-
 .minecraft-title {
     font-size: 52px;
 }
@@ -128,7 +124,6 @@ a {
     padding-top: 33px;
     background: url('mg12.jpg') no-repeat;
     background-size: cover;
-    overflow-x: hidden;
 }
 
 .minecraft-top__title-wrapper {

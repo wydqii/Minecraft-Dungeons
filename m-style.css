@@ -128,6 +128,7 @@ a {
     padding-top: 33px;
     background: url('mg12.jpg') no-repeat;
     background-size: cover;
+    overflow-x: hidden;
 }
 
 .minecraft-top__title-wrapper {
@@ -303,14 +304,14 @@ a {
 }
 @media (max-width: 393px) {
     html, body {
-    font-size:  17px;
+    font-size:  14px;
     width: 100%;
-    min-width: 400px;
+    min-width: 350px;
     }
     
     .minecraft-top__title {
         font-size: 28px;
-        line-height: 40px;
+        line-height: 30px;
     }
 
     .minecraft-list {
@@ -319,15 +320,16 @@ a {
 
 
     .minecraft-list__link {
-        font-size: 17px;
+        font-size: 12px;
     }
 
     .minecraft-top {
-        height: calc(25vh - 33px);
+        height: calc(20vh - 33px);
+        padding-top: 11px;
     }
 
-    .minecraft-top__title {
-        font-size: 32px;
+    .title-paragraph {
+        font-size: 18px;
     }
 
     .paragraphs {

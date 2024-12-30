@@ -301,3 +301,40 @@ a {
         font-size: 14px;
     }
 }
+@media (max-width: 393px) {
+    html, body {
+    font-size:  17px;
+    width: 100%;
+    min-width: 400px;
+    }
+    
+    .minecraft-top__title {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .minecraft-list {
+        padding-left: 10px;
+    }
+
+
+    .minecraft-list__link {
+        font-size: 17px;
+    }
+
+    .minecraft-top {
+        height: calc(25vh - 33px);
+    }
+
+    .minecraft-top__title {
+        font-size: 32px;
+    }
+
+    .paragraphs {
+        width: 95%;
+    }
+
+    .dropdown-menu {
+        font-size: 14px;
+    }
+}
